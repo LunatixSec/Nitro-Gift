@@ -6,7 +6,7 @@
     <meta property="og:description" content="Someone just gifted you 1 month of Discord Nitro! Click to claim your gift." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://discord.com/gift/2025" />
-    <meta property="og:image" content="https://i.imgur.com/7U7qQjR.png" />
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/748559441246191708/1122351139867013241/nitro_gift.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="theme-color" content="#5865F2" />
@@ -16,7 +16,7 @@
         body {
             background: #313338;
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -30,37 +30,81 @@
             border-radius: 12px;
             max-width: 500px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            border: 1px solid #2b2d31;
         }
-        h1 { color: #5865F2; }
+        h1 { 
+            color: #5865F2; 
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+        .nitro-badge {
+            background: #5865F2;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #dbdee1;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+        code {
+            background: #2b2d31;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-family: 'Courier New', monospace;
+            color: #00b0f4;
+            border: 1px solid #3b3f48;
+            display: inline-block;
+            margin: 15px 0;
+        }
         a {
             display: inline-block;
             background: #5865F2;
             color: white;
-            padding: 15px 30px;
+            padding: 16px 40px;
             border-radius: 8px;
             text-decoration: none;
-            font-weight: bold;
-            margin-top: 20px;
-            transition: 0.2s;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 20px 0 10px;
+            transition: background 0.2s;
+            width: 80%;
         }
         a:hover {
             background: #4752c4;
         }
-        code {
-            background: #2b2d31;
-            padding: 8px 12px;
-            border-radius: 6px;
-            font-size: 18px;
+        .expiry {
+            font-size: 12px;
+            color: #949ba4;
+            margin-top: 15px;
+        }
+        .footer {
+            font-size: 11px;
+            color: #5d5f64;
+            margin-top: 20px;
+            border-top: 1px solid #2b2d31;
+            padding-top: 15px;
         }
     </style>
 </head>
 <body>
     <div class="box">
-        <h1>🎁 Discord Nitro</h1>
-        <p>You've been gifted <strong>1 month</strong> of Nitro!</p>
-        <p>Code: <code>NITRO-2025-ABCDEF</code></p>
+        <span class="nitro-badge">NITRO GIFT</span>
+        <h1>🎁 You've been gifted Nitro!</h1>
+        <p>Someone just gifted you <strong>1 month</strong> of Discord Nitro!</p>
+        <p>Your gift code:</p>
+        <code>NITRO-2025-ABCDEF</code>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Accept Gift</a>
-        <p style="font-size: 12px; opacity: 0.5; margin-top: 20px;">This gift expires in 24 hours</p>
+        <p class="expiry">⚠️ This gift expires in 24 hours</p>
+        <div class="footer">
+            <p>Discord Nitro is a registered trademark of Discord Inc.</p>
+        </div>
     </div>
 </body>
 </html>
